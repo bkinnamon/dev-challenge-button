@@ -1,0 +1,8 @@
+<button
+  class="button"
+  [class.button--outline]="variant === 'outline'"
+  [class.button--text]="variant === 'text'"
+  [class.button--no-shadow]="disableShadow"
+>
+  <ng-content></ng-content>
+</button>

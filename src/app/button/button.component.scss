@@ -1,0 +1,64 @@
+$border-radius: 0.5rem;
+
+$c-default-bg: #e0e0e0;
+$c-default-bg--hover: #aeaeae;
+$c-default-text: #3f3f3f;
+
+$c-outline-bg: #fff;
+$c-outline-bg--hover: rgba(41, 98, 255, 0.1);
+$c-outline-border: #3d5afe;
+$c-outline-text: #3d5afe;
+
+$c-text-bg: #fff;
+$c-text-bg--hover: rgba(41, 98, 255, 0.1);
+$c-text-text: #3d5afe;
+
+$margin: 0.5rem;
+$padding: 0.7rem 1rem;
+$shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+$transition: 200ms;
+
+.button {
+  background: $c-default-bg;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  color: $c-default-text;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: $margin;
+  padding: $padding;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background: $c-default-bg--hover;
+  }
+
+  &--outline {
+    background: $c-outline-bg;
+    border: 1px solid $c-outline-border;
+    box-shadow: none;
+    color: $c-outline-text;
+
+    &:hover,
+    &:focus {
+      background: $c-outline-bg--hover;
+    }
+  }
+
+  &--text {
+    background: $c-text-bg;
+    box-shadow: none;
+    color: $c-text-text;
+
+    &:hover,
+    &:focus {
+      background: $c-text-bg--hover;
+    }
+  }
+
+  &--no-shadow {
+    box-shadow: none;
+  }
+}

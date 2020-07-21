@@ -2,7 +2,32 @@
 
 <h2>User Story: Button Types</h2>
 
+<div>
+  <app-button>Default</app-button>
+</div>
+<div>
+  <app-button variant="default">Default</app-button>
+</div>
+<div>
+  <app-button variant="outline">Outline</app-button>
+</div>
+<div>
+  <app-button variant="text">Text</app-button>
+</div>
+
 <h2>User Story: Disable Shadow</h2>
+
+<div>
+  <app-button>Has Shadow</app-button>
+</div>
+
+<div>
+  <app-button [disable-shadow]="true">No Shadow</app-button>
+</div>
+
+<div>
+  <app-button [disable-shadow]="false">Has Shadow</app-button>
+</div>
 
 <h2>User Story: Disable Button</h2>
 
